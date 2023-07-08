@@ -43,6 +43,12 @@ TagManager:
   - name: background
     uniqueID: 4086809435
     locked: 0
+  - name: Buildings
+    uniqueID: 3692469235
+    locked: 0
+  - name: roads
+    uniqueID: 231005445
+    locked: 0
   - name: middleground
     uniqueID: 3891268129
     locked: 0
