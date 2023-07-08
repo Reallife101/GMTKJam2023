@@ -7,6 +7,7 @@ public class pointManager : MonoBehaviour
 {
     [SerializeField] int totalPoints;
     [SerializeField] TMP_Text score;
+    [SerializeField] CinemachineShake cs;
 
     private void Start()
     {
@@ -22,6 +23,10 @@ public class pointManager : MonoBehaviour
             totalPoints += pv.points;
             pv.die();
             updateScoreUI();
+            if (cs)
+            {
+                cs.ShakeCamera();
+            }
         }
     }
 
