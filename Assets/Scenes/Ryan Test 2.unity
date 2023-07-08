@@ -2832,7 +2832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slide: {fileID: 695347243}
-  maxTime: 5
+  maxTime: 100
   main: {fileID: 2083129231}
   three: {fileID: 648147939, guid: 381a65585eba0ec42bbee9564372fe26, type: 3}
   two: {fileID: -1556048450, guid: 381a65585eba0ec42bbee9564372fe26, type: 3}
