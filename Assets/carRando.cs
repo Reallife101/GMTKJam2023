@@ -24,7 +24,7 @@ public class carRando : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		float h = -(Random.Range(0.2f, 1));
+		float h = -(Random.Range(0.3f, 1));
 		float v = 1;
 
 		float steer = 0f;
