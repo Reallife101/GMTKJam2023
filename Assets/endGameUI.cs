@@ -9,11 +9,14 @@ public class endGameUI : MonoBehaviour
     [SerializeField] pointManager pm;
     [SerializeField] TMP_Text slain;
     [SerializeField] TMP_Text points;
+    [SerializeField] TMP_Text hs;
 
     private void OnEnable()
     {
         slain.text = "Slain: " + pm.totalSlain;
         points.text = "Points: " + pm.totalPoints;
+        highScore.Instance.SetScore(pm.totalPoints);
+        hs.text = "High Score: " + highScore.Instance.maxScore;
     }
 
     public void retry()
