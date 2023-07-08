@@ -5,13 +5,16 @@ using TMPro;
 
 public class pointManager : MonoBehaviour
 {
-    [SerializeField] int totalPoints;
+    public int totalPoints;
     [SerializeField] TMP_Text score;
     [SerializeField] CinemachineShake cs;
+
+    public int totalSlain;
 
     private void Start()
     {
         totalPoints = 0;
+        totalSlain = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -23,6 +26,7 @@ public class pointManager : MonoBehaviour
         {
             int pointsGained = (int)(pv.points * comboManager.CM_Instance.currentMultiplier);
             totalPoints += pointsGained;
+            totalSlain += 1;
             comboManager.CM_Instance.GainComboPoints(pointsGained);
             pv.die();
             updateScoreUI();

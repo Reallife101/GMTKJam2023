@@ -17,6 +17,8 @@ public class gameManager : MonoBehaviour
 
     [SerializeField] Animator endUI;
 
+    [SerializeField] GameObject summaryPage;
+
 
     bool startGame;
 
@@ -25,6 +27,7 @@ public class gameManager : MonoBehaviour
         slide.maxValue = maxTime;
         slide.value = maxTime;
         startSequence();
+        summaryPage.SetActive(false);
 
     }
 
@@ -50,6 +53,7 @@ public class gameManager : MonoBehaviour
     private void endGame()
     {
         endUI.SetBool("end", true);
+        StartCoroutine(summary());
     }
 
     IEnumerator count()
@@ -67,6 +71,14 @@ public class gameManager : MonoBehaviour
         startGame = true;
         yield return new WaitForSeconds(1f);
         slay.SetActive(false);
+    }
+
+    IEnumerator summary()
+    {
+
+        GameObject.FindGameObjectWithTag("Player").GetComponent<carController>().enabled = false;
+        yield return new WaitForSeconds(3f);
+        summaryPage.SetActive(true);
     }
 
 
