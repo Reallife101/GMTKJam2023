@@ -17,6 +17,14 @@ public class pointManager : MonoBehaviour
         totalSlain = 0;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (cs)
+        {
+            cs.ShakeCamera();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //If it has pointValues, kill it and gain points
