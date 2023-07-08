@@ -8,6 +8,14 @@ public class gameManager : MonoBehaviour
     [SerializeField] Slider slide;
     [SerializeField] int maxTime;
 
+    [Header("Countdown")]
+    [SerializeField] Image main;
+    [SerializeField] Sprite three;
+    [SerializeField] Sprite two;
+    [SerializeField] Sprite one;
+    [SerializeField] GameObject slay;
+
+
     bool startGame;
 
     private void Start()
@@ -33,13 +41,32 @@ public class gameManager : MonoBehaviour
 
     private void startSequence()
     {
-        startGame = true;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<carController>().enabled = false;
+        StartCoroutine(count());
     }
 
     private void endGame()
     {
 
     }
+
+    IEnumerator count()
+    {
+        main.gameObject.SetActive(true);
+        main.sprite = three;
+        yield return new WaitForSeconds(1f);
+        main.sprite = two;
+        yield return new WaitForSeconds(1f);
+        main.sprite = one;
+        yield return new WaitForSeconds(1f);
+        main.gameObject.SetActive(false);
+        slay.SetActive(true);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<carController>().enabled = true;
+        startGame = true;
+        yield return new WaitForSeconds(1f);
+        slay.SetActive(false);
+    }
+
 
 
 }
