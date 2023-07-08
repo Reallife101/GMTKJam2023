@@ -7,14 +7,19 @@ public class carController : MonoBehaviour
 	public float acceleration;
 	public float steering;
 
-	[SerializeField] GameObject smoke;
 	[SerializeField] ParticleSystem ps;
+	[SerializeField] ParticleSystem ps2;
+
+	public bool drifting;
 
 	private Rigidbody2D rb;
+
 
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
+		drifting = false;
+
 	}
 
 	void FixedUpdate()
@@ -31,11 +36,15 @@ public class carController : MonoBehaviour
 			accel = acceleration/2;
 			if (h!=0)
             {
-				smoke.SetActive(true);
+				ps.emissionRate = 20f;
+				ps2.emissionRate = 20f;
+				drifting = true;
 			}
             else
             {
-				smoke.SetActive(false);
+				ps.emissionRate = 0;
+				ps2.emissionRate = 0f;
+				drifting = false;
 			}
 
 		}
@@ -43,7 +52,9 @@ public class carController : MonoBehaviour
         {
 			steer = steering;
 			accel = acceleration;
-			smoke.SetActive(false);
+			ps.emissionRate = 0;
+			ps2.emissionRate = 0f;
+			drifting = false;
 		}
 
 		Vector2 speed = transform.up * (v * accel);
