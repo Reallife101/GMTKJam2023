@@ -15,6 +15,8 @@ public class gameManager : MonoBehaviour
     [SerializeField] Sprite one;
     [SerializeField] GameObject slay;
 
+    [SerializeField] Animator endUI;
+
 
     bool startGame;
 
@@ -47,7 +49,7 @@ public class gameManager : MonoBehaviour
 
     private void endGame()
     {
-
+        endUI.SetBool("end", true);
     }
 
     IEnumerator count()
