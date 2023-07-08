@@ -12,4 +12,8 @@ public class comboTier : ScriptableObject
     public float pointMultiplier;
     public comboTier nextTier;
     public comboTier prevTier;
+    public float cameraZoomAmount;
+    public float bloomIntensity;
+    public float chromaticAbberationIntensity;
+    public float vignetteIntensity;
 }

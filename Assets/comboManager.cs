@@ -4,6 +4,7 @@ using UnityEngine;
 using Cinemachine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Rendering.PostProcessing;
 
 public class comboManager : MonoBehaviour
 {
@@ -20,6 +21,14 @@ public class comboManager : MonoBehaviour
     [SerializeField] TMP_Text multiplierText;
     [SerializeField] Image comboMeterBackground;
     [SerializeField] private float comboDecayPercentagePerSecond;
+    [SerializeField] float transitionDuration;
+
+    private Coroutine effectCoroutine = null;
+
+    [SerializeField] private PostProcessVolume PV;
+    private Bloom bloom;
+    private ChromaticAberration ca;
+    private Vignette vig;
 
     private void Awake()
     {
@@ -31,6 +40,10 @@ public class comboManager : MonoBehaviour
         {
             CM_Instance = this;
         }
+
+        PV.profile.TryGetSettings<Bloom>(out bloom);
+        PV.profile.TryGetSettings<ChromaticAberration>(out ca);
+        PV.profile.TryGetSettings<Vignette>(out vig);
     }
 
     // Start is called before the first frame update
@@ -38,7 +51,7 @@ public class comboManager : MonoBehaviour
     {
         currentTier = startingTier;
         currentMultiplier = currentTier.pointMultiplier;
-        UpdateUIText();
+        UpdateUIElements();
     }
 
     // Update is called once per frame
@@ -61,7 +74,7 @@ public class comboManager : MonoBehaviour
             currentComboPoints -= currentTier.pointsRequiredToNext;
             currentTier = currentTier.nextTier;
             currentMultiplier = currentTier.pointMultiplier;
-            UpdateUIText();
+            UpdateUIElements();
 
         }
 
@@ -71,7 +84,7 @@ public class comboManager : MonoBehaviour
             currentTier = currentTier.prevTier;
             currentMultiplier = currentTier.pointMultiplier;
             currentComboPoints += currentTier.pointsRequiredToNext;
-            UpdateUIText();
+            UpdateUIElements();
         }
 
 
@@ -86,12 +99,42 @@ public class comboManager : MonoBehaviour
         currentComboPoints += points;
     }
 
-    private void UpdateUIText()
+    private void UpdateUIElements()
     {
         multiplierText.text = "Multiplier - " + currentTier.pointMultiplier.ToString() + "x";
         tierText.text = currentTier.letterGradeText;
         comboMeterBackground.color = currentTier.comboMeterColor;
         multiplierText.color = currentTier.comboMeterColor;
         tierText.color = currentTier.comboMeterColor;
+        HandleEffects();
+        
+    }
+
+    private void HandleEffects()
+    {
+        if(effectCoroutine != null)
+        {
+            StopCoroutine(effectCoroutine);
+        }
+        effectCoroutine = StartCoroutine(UpdateCameraZoomAndBloods());
+    }
+
+    private IEnumerator UpdateCameraZoomAndBloods()
+    {
+        float timeElapsed = 0;
+        float caOrigin = ca.intensity;
+        float bloomOrigin = bloom.intensity;
+        float vigOrigin = vig.intensity;
+        float cameraSizeOrigin = playerCamera.m_Lens.OrthographicSize;
+        while(timeElapsed <= transitionDuration)
+        {
+            timeElapsed += Time.deltaTime;
+            bloom.intensity.Override(Mathf.Lerp(bloomOrigin, currentTier.bloomIntensity, timeElapsed/transitionDuration));
+            ca.intensity.Override(Mathf.Lerp(caOrigin, currentTier.chromaticAbberationIntensity, timeElapsed / transitionDuration));
+            vig.intensity.Override(Mathf.Lerp(vigOrigin, currentTier.vignetteIntensity, timeElapsed / transitionDuration));
+            playerCamera.m_Lens.OrthographicSize = Mathf.Lerp(cameraSizeOrigin, currentTier.cameraZoomAmount, timeElapsed / transitionDuration);
+            yield return null;
+        }
+        yield return null;
     }
 }
