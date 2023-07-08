@@ -13,7 +13,8 @@ public class pointManager : MonoBehaviour
     {
         totalPoints = 0;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         //If it has pointValues, kill it and gain points
         pointValue pv = collision.gameObject.GetComponent<pointValue>();
