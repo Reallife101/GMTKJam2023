@@ -21,11 +21,12 @@ public class pointManager : MonoBehaviour
         {
             totalPoints += pv.points;
             pv.die();
+            updateScoreUI();
         }
     }
 
     private void updateScoreUI()
     {
-
+        score.text = "Points: " + totalPoints;
     }
 }
