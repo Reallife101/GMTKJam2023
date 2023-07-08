@@ -2497,7 +2497,7 @@ MonoBehaviour:
   tierText: {fileID: 1871365625}
   multiplierText: {fileID: 1192441928}
   comboMeterBackground: {fileID: 1238966441}
-  comboDecayPercentagePerSecond: 0.15
+  comboDecayPercentagePerSecond: 0.12
   transitionDuration: 0.5
   PV: {fileID: 519420035}
 --- !u!1 &1461753508
