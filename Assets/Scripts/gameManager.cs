@@ -28,6 +28,7 @@ public class gameManager : MonoBehaviour
         slide.value = maxTime;
         startSequence();
         summaryPage.SetActive(false);
+        slay.SetActive(false);
         startGame = false;
 
     }
