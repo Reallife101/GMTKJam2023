@@ -20,7 +20,9 @@ public class pointManager : MonoBehaviour
 
         if (pv)
         {
-            totalPoints += pv.points;
+            int pointsGained = (int)(pv.points * comboManager.CM_Instance.currentMultiplier);
+            totalPoints += pointsGained;
+            comboManager.CM_Instance.GainComboPoints(pointsGained);
             pv.die();
             updateScoreUI();
             if (cs)
