@@ -6,6 +6,10 @@ public class carController : MonoBehaviour
 {
 	public float acceleration;
 	public float steering;
+
+	[SerializeField] GameObject smoke;
+	[SerializeField] ParticleSystem ps;
+
 	private Rigidbody2D rb;
 
 	void Start()
@@ -25,11 +29,21 @@ public class carController : MonoBehaviour
         {
 			steer = steering * 2;
 			accel = acceleration/2;
-        }
+			if (h!=0)
+            {
+				smoke.SetActive(true);
+			}
+            else
+            {
+				smoke.SetActive(false);
+			}
+
+		}
 		else
         {
 			steer = steering;
 			accel = acceleration;
+			smoke.SetActive(false);
 		}
 
 		Vector2 speed = transform.up * (v * accel);
