@@ -81,33 +81,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 512000
---- !u!114 &-4278819657924043282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MusicAmbiance/TEMP In Game Music
-  m_EditorClassIdentifier: 
-  Path: event:/MusicAmbiance/TEMP In Game Music
-  Guid:
-    Data1: -1196392633
-    Data2: 1288092890
-    Data3: 1201529267
-    Data4: -594770210
-  Banks:
-  - {fileID: -2425263070615814250}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 109869
 --- !u!114 &-3366463862042389838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,11 +123,38 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638244640918657078
+  lastModified: 638244657505577753
   FileSizes:
   - Name: 
-    Value: 1236
+    Value: 1320
   Exists: 1
+--- !u!114 &-2632561081781944018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Combo SoundEffects/Derank
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Combo SoundEffects/Derank
+  Guid:
+    Data1: -865326017
+    Data2: 1102930270
+    Data3: -872932693
+    Data4: 1069934413
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4090
 --- !u!114 &-2425263070615814250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,9 +170,36 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638244640918647070
+  lastModified: 638244657505552623
   FileSizes: []
   Exists: 1
+--- !u!114 &-1777830050859394338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Hit Target
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Hit Target
+  Guid:
+    Data1: 945328902
+    Data2: 1171375031
+    Data3: 483168899
+    Data4: 1927189599
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,20 +219,49 @@ MonoBehaviour:
   - {fileID: 6353475011892565306}
   - {fileID: -6943110190841404093}
   - {fileID: -3366463862042389838}
-  - {fileID: -4278819657924043282}
   - {fileID: 3589801855574027902}
   - {fileID: 1814002126352731149}
   - {fileID: 1332809207260769768}
   - {fileID: 5267640812360966608}
   - {fileID: -8223680066938583348}
   - {fileID: -7703277562313135698}
+  - {fileID: -1777830050859394338}
+  - {fileID: 531968338397994275}
+  - {fileID: -2632561081781944018}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2425263070615814250}
   StringsBanks:
   - {fileID: -2985665930549492918}
-  cacheTime: 638244640918657078
+  cacheTime: 638244657505577753
   cacheVersion: 131601
+--- !u!114 &531968338397994275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicAmbiance/In Game Music
+  m_EditorClassIdentifier: 
+  Path: event:/MusicAmbiance/In Game Music
+  Guid:
+    Data1: -1196392633
+    Data2: 1288092890
+    Data3: 1201529267
+    Data4: -594770210
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 109869
 --- !u!114 &1332809207260769768
 MonoBehaviour:
   m_ObjectHideFlags: 0

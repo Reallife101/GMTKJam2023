@@ -9,6 +9,7 @@ public class pointManager : MonoBehaviour
     [SerializeField] TMP_Text score;
     [SerializeField] CinemachineShake cs;
     [SerializeField] bloodSplatter splatter;
+    [SerializeField] FMODUnity.EventReference hitTarget;
 
     public int totalSlain;
 
@@ -37,6 +38,7 @@ public class pointManager : MonoBehaviour
             totalPoints += pointsGained;
             totalSlain += 1;
             comboManager.CM_Instance.GainComboPoints(pointsGained);
+            FMODUnity.RuntimeManager.PlayOneShot(hitTarget);
             pv.die();
             updateScoreUI();
             if (cs)

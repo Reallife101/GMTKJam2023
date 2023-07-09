@@ -18254,6 +18254,7 @@ GameObject:
   - component: {fileID: 334563803}
   - component: {fileID: 334563807}
   - component: {fileID: 334563808}
+  - component: {fileID: 334563809}
   m_Layer: 0
   m_Name: Car
   m_TagString: Player
@@ -18418,7 +18419,44 @@ MonoBehaviour:
   score: {fileID: 1585169721}
   cs: {fileID: 1165928097}
   splatter: {fileID: 977689218}
+  hitTarget:
+    Guid:
+      Data1: 945328902
+      Data2: 1171375031
+      Data3: 483168899
+      Data4: 1927189599
+    Path: event:/SoundEffects/Hit Target
   totalSlain: 0
+--- !u!114 &334563809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334563802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 384641619
+      Data2: 1329073738
+      Data3: -1623633511
+      Data4: 46108126
+    Path: event:/SoundEffects/Truck Collide
+  Event: 
+  PlayEvent: 9
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &335108377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22306,6 +22344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 396853703}
   - component: {fileID: 396853704}
+  - component: {fileID: 396853705}
   m_Layer: 5
   m_Name: ComboUI
   m_TagString: Untagged
@@ -22345,6 +22384,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396853702}
   m_CullTransparentMesh: 1
+--- !u!114 &396853705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396853702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -472691924
+      Data2: 1279723376
+      Data3: -417827453
+      Data4: -1356100301
+    Path: event:/SoundEffects/Combo SoundEffects/Dastardly
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &398118250
 GameObject:
   m_ObjectHideFlags: 0
@@ -29640,7 +29709,7 @@ MonoBehaviour:
       Data2: 1288092890
       Data3: 1201529267
       Data4: -594770210
-    Path: event:/MusicAmbiance/TEMP In Game Music
+    Path: event:/MusicAmbiance/In Game Music
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -84405,6 +84474,13 @@ MonoBehaviour:
   comboMeterBackground: {fileID: 1238966441}
   comboDecayPercentagePerSecond: 0.12
   transitionDuration: 0.5
+  derankSound:
+    Guid:
+      Data1: -865326017
+      Data2: 1102930270
+      Data3: -872932693
+      Data4: 1069934413
+    Path: event:/SoundEffects/Combo SoundEffects/Derank
   PV: {fileID: 519420035}
 --- !u!114 &1419752611
 MonoBehaviour:
