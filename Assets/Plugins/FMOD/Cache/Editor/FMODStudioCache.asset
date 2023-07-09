@@ -204,10 +204,10 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638244708806521209
+  lastModified: 638244742047170322
   FileSizes:
   - Name: 
-    Value: 1458
+    Value: 1722
   Exists: 1
 --- !u!114 &-2632561081781944018
 MonoBehaviour:
@@ -251,9 +251,36 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638244708806471142
+  lastModified: 638244742047138611
   FileSizes: []
   Exists: 1
+--- !u!114 &-2333807519883949920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicAmbiance/Cutscene Song 1
+  m_EditorClassIdentifier: 
+  Path: event:/MusicAmbiance/Cutscene Song 1
+  Guid:
+    Data1: -1869557084
+    Data2: 1211047421
+    Data3: -83350094
+    Data4: -12544166
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13757
 --- !u!114 &-1777830050859394338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,13 +339,43 @@ MonoBehaviour:
   - {fileID: -5789826755952737398}
   - {fileID: -4949198390391050133}
   - {fileID: -3005367057607892680}
-  EditorParameters: []
+  - {fileID: 7281329557943728427}
+  - {fileID: 6107949495509051192}
+  - {fileID: 5075760210950446138}
+  - {fileID: -2333807519883949920}
+  - {fileID: 6379019175445256580}
+  EditorParameters:
+  - {fileID: 246606054055058877}
   MasterBanks:
   - {fileID: -2425263070615814250}
   StringsBanks:
   - {fileID: -2985665930549492918}
-  cacheTime: 638244708806521209
+  cacheTime: 638244742047170322
   cacheVersion: 131601
+--- !u!114 &246606054055058877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Quiet Fade
+  m_EditorClassIdentifier: 
+  Name: Quiet Fade
+  StudioPath: parameter:/Quiet Fade
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4178876514
+    data2: 2334702240
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &531968338397994275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,7 +399,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 6501482747312054889}
   MinDistance: 1
   MaxDistance: 20
   Length: 109869
@@ -427,6 +485,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &5075760210950446138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Cutscene2
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Cutscene2
+  Guid:
+    Data1: -144828246
+    Data2: 1308965539
+    Data3: 52563382
+    Data4: 1057223425
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1331
 --- !u!114 &5267640812360966608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,6 +539,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &6107949495509051192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Cutscene1
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Cutscene1
+  Guid:
+    Data1: 1592109861
+    Data2: 1270111470
+    Data3: -713640056
+    Data4: 409559256
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4050
 --- !u!114 &6353475011892565306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,3 +593,81 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6379019175445256580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Cutscene3
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Cutscene3
+  Guid:
+    Data1: -2126340209
+    Data2: 1078432552
+    Data3: 929259422
+    Data4: -1383813006
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3250
+--- !u!114 &6501482747312054889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/In Game Music/Quiet Fade
+  m_EditorClassIdentifier: 
+  Name: Quiet Fade
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4178876514
+    data2: 2334702240
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &7281329557943728427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/End Bell
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/End Bell
+  Guid:
+    Data1: 34840702
+    Data2: 1325753704
+    Data3: 61782198
+    Data4: -1761733922
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2980
