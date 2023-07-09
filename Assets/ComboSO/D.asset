@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: D
   m_EditorClassIdentifier: 
   letterGradeSprite: {fileID: 0}
-  letterGradeText: Driving
+  letterGradeText: Dastardly
   comboMeterColor: {r: 0, g: 0.37962723, b: 1, a: 1}
   pointsRequiredToNext: 250
   pointMultiplier: 1

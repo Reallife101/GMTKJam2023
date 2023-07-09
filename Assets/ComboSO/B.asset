@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: B
   m_EditorClassIdentifier: 
   letterGradeSprite: {fileID: 0}
-  letterGradeText: Bursting
+  letterGradeText: Brilliant
   comboMeterColor: {r: 0.7126256, g: 0.3100747, b: 0.735849, a: 1}
   pointsRequiredToNext: 800
   pointMultiplier: 1.5

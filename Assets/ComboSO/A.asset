@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: A
   m_EditorClassIdentifier: 
   letterGradeSprite: {fileID: 0}
-  letterGradeText: Assaulting
+  letterGradeText: Awesome
   comboMeterColor: {r: 1, g: 0.5145066, b: 0, a: 1}
   pointsRequiredToNext: 1200
   pointMultiplier: 1.75

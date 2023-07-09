@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: C
   m_EditorClassIdentifier: 
   letterGradeSprite: {fileID: 0}
-  letterGradeText: Cute! ^-^
+  letterGradeText: Cracked
   comboMeterColor: {r: 0.1121045, g: 0.7075472, b: 0.044499747, a: 1}
   pointsRequiredToNext: 500
   pointMultiplier: 1.25
