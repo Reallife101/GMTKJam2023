@@ -8,6 +8,7 @@ public class pointManager : MonoBehaviour
     public int totalPoints;
     [SerializeField] TMP_Text score;
     [SerializeField] CinemachineShake cs;
+    [SerializeField] bloodSplatter splatter;
 
     public int totalSlain;
 
@@ -41,6 +42,10 @@ public class pointManager : MonoBehaviour
             if (cs)
             {
                 cs.ShakeCamera();
+            }
+            if (splatter)
+            {
+                splatter.RefreshSplatter();
             }
         }
     }
