@@ -22,6 +22,7 @@ public class comboManager : MonoBehaviour
     [SerializeField] Image comboMeterBackground;
     [SerializeField] private float comboDecayPercentagePerSecond;
     [SerializeField] float transitionDuration;
+    [SerializeField] FMODUnity.EventReference derankSound;
 
     private Coroutine effectCoroutine = null;
 
@@ -90,6 +91,7 @@ public class comboManager : MonoBehaviour
             currentTier = currentTier.prevTier;
             currentMultiplier = currentTier.pointMultiplier;
             currentComboPoints += currentTier.pointsRequiredToNext;
+            FMODUnity.RuntimeManager.PlayOneShot(derankSound);
             UpdateUIElements();
         }
 
@@ -112,7 +114,7 @@ public class comboManager : MonoBehaviour
         comboMeterBackground.color = currentTier.comboMeterColor;
         multiplierText.color = currentTier.comboMeterColor;
         tierText.color = currentTier.comboMeterColor;
-        startSound = true;
+        startSound = true; 
         HandleEffects();
         
     }
