@@ -9,16 +9,22 @@ public class carController : MonoBehaviour
 
 	[SerializeField] ParticleSystem ps;
 	[SerializeField] ParticleSystem ps2;
+	[SerializeField] FMODUnity.EventReference driftSound;
 
 	public bool drifting;
+	
 
 	private Rigidbody2D rb;
+	float interval = 1.5f; 
+    float nextTime = 0;
+
 
 
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
 		drifting = false;
+		
 
 	}
 
@@ -39,6 +45,15 @@ public class carController : MonoBehaviour
 				ps.emissionRate = 20f;
 				ps2.emissionRate = 20f;
 				drifting = true;
+				
+				if (Time.time >= nextTime) 
+				{
+					FMODUnity.RuntimeManager.PlayOneShot(driftSound);
+             		nextTime += interval; 
+				}
+				
+					
+				
 			}
             else
             {

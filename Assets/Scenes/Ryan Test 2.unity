@@ -18277,6 +18277,13 @@ MonoBehaviour:
   steering: 1.5
   ps: {fileID: 1421897329}
   ps2: {fileID: 2125054260}
+  driftSound:
+    Guid:
+      Data1: -1549537550
+      Data2: 1081377271
+      Data3: 602967221
+      Data4: 59977255
+    Path: event:/SoundEffects/Truck Drifting
   drifting: 0
 --- !u!50 &334563804
 Rigidbody2D:

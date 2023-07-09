@@ -1,5 +1,59 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6943110190841404093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicAmbiance/Traffic Ambiance
+  m_EditorClassIdentifier: 
+  Path: event:/MusicAmbiance/Traffic Ambiance
+  Guid:
+    Data1: 1787511383
+    Data2: 1278117914
+    Data3: -1349645637
+    Data4: 1267641002
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 512000
+--- !u!114 &-3366463862042389838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Truck Drifting
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Truck Drifting
+  Guid:
+    Data1: -1549537550
+    Data2: 1081377271
+    Data3: 602967221
+    Data4: 59977255
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1562
 --- !u!114 &-2985665930549492918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +69,10 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638244516886730914
+  lastModified: 638244555154517299
   FileSizes:
   - Name: 
-    Value: 760
+    Value: 890
   Exists: 1
 --- !u!114 &-2425263070615814250
 MonoBehaviour:
@@ -35,7 +89,7 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638244516886720903
+  lastModified: 638244555154497288
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -55,12 +109,14 @@ MonoBehaviour:
   - {fileID: -2425263070615814250}
   EditorEvents:
   - {fileID: 6353475011892565306}
+  - {fileID: -6943110190841404093}
+  - {fileID: -3366463862042389838}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2425263070615814250}
   StringsBanks:
   - {fileID: -2985665930549492918}
-  cacheTime: 638244516886730914
+  cacheTime: 638244555154517299
   cacheVersion: 131601
 --- !u!114 &6353475011892565306
 MonoBehaviour:
