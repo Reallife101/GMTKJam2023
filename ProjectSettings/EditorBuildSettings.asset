@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ryan Test 2.unity
     guid: d88485879a5f0884982cf23ba7245fc4
+  - enabled: 1
+    path: Assets/Scenes/end cutscene.unity
+    guid: 53f3db343c2a37243afb63bf1ac1951e
   m_configObjects: {}

@@ -8906,7 +8906,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Isekai Truck Simulator! <3
+  m_text: That Time I was an Isekai Truck and Sent People to Another World!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a520ca5544b9cb438b5a0e06750fdbd, type: 2}
   m_sharedMaterial: {fileID: 3182067197243834979, guid: 8a520ca5544b9cb438b5a0e06750fdbd, type: 2}
@@ -8933,8 +8933,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 46
+  m_fontSizeBase: 46
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
