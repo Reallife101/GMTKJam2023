@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4846
+--- !u!114 &-7703277562313135698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Truck Collide
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Truck Collide
+  Guid:
+    Data1: 384641619
+    Data2: 1329073738
+    Data3: -1623633511
+    Data4: 46108126
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-6943110190841404093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,10 +150,10 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638244627780389701
+  lastModified: 638244640918657078
   FileSizes:
   - Name: 
-    Value: 1186
+    Value: 1236
   Exists: 1
 --- !u!114 &-2425263070615814250
 MonoBehaviour:
@@ -143,7 +170,7 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638244627780364599
+  lastModified: 638244640918647070
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -171,12 +198,13 @@ MonoBehaviour:
   - {fileID: 1332809207260769768}
   - {fileID: 5267640812360966608}
   - {fileID: -8223680066938583348}
+  - {fileID: -7703277562313135698}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2425263070615814250}
   StringsBanks:
   - {fileID: -2985665930549492918}
-  cacheTime: 638244627780389701
+  cacheTime: 638244640918657078
   cacheVersion: 131601
 --- !u!114 &1332809207260769768
 MonoBehaviour:
