@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Title Screen.unity
     guid: fcb898ca04d7a1f419de833f3ae07f99
   - enabled: 1
+    path: Assets/Scenes/cutscene.unity
+    guid: 5fd4945731ab7a745a2a7bec52527128
+  - enabled: 1
     path: Assets/Scenes/Ryan Test 2.unity
     guid: d88485879a5f0884982cf23ba7245fc4
   m_configObjects: {}
