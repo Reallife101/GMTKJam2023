@@ -23,3 +23,10 @@ MonoBehaviour:
   bloomIntensity: 1
   chromaticAbberationIntensity: 0.1
   vignetteIntensity: 0.15
+  comboSound:
+    Guid:
+      Data1: 1200228326
+      Data2: 1149027288
+      Data3: 1069372855
+      Data4: 872368253
+    Path: event:/SoundEffects/Combo SoundEffects/Cracked

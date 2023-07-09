@@ -16,4 +16,6 @@ public class comboTier : ScriptableObject
     public float bloomIntensity;
     public float chromaticAbberationIntensity;
     public float vignetteIntensity;
+    public FMODUnity.EventReference comboSound;
+    public FMODUnity.EventReference dastardlyComboSound;
 }

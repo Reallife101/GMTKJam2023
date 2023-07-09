@@ -29,6 +29,7 @@ public class comboManager : MonoBehaviour
     private Bloom bloom;
     private ChromaticAberration ca;
     private Vignette vig;
+    private bool startSound;
 
     private void Awake()
     {
@@ -51,6 +52,7 @@ public class comboManager : MonoBehaviour
     {
         currentTier = startingTier;
         currentMultiplier = currentTier.pointMultiplier;
+        startSound = false;
         UpdateUIElements();
     }
 
@@ -74,6 +76,10 @@ public class comboManager : MonoBehaviour
             currentComboPoints -= currentTier.pointsRequiredToNext;
             currentTier = currentTier.nextTier;
             currentMultiplier = currentTier.pointMultiplier;
+            if (startSound)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(currentTier.comboSound);
+            }
             UpdateUIElements();
 
         }
@@ -106,6 +112,7 @@ public class comboManager : MonoBehaviour
         comboMeterBackground.color = currentTier.comboMeterColor;
         multiplierText.color = currentTier.comboMeterColor;
         tierText.color = currentTier.comboMeterColor;
+        startSound = true;
         HandleEffects();
         
     }
