@@ -52,6 +52,9 @@ TagManager:
   - name: middleground
     uniqueID: 3891268129
     locked: 0
+  - name: CAR
+    uniqueID: 2770648875
+    locked: 0
   - name: foreground
     uniqueID: 3480683993
     locked: 0
