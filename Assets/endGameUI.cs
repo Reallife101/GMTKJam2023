@@ -24,6 +24,11 @@ public class endGameUI : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void next()
+    {
+        SceneManager.LoadScene(3);
+    }
+
     public void Quit()
     {
         Application.Quit();

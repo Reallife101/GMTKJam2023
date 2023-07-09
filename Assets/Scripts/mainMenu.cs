@@ -33,7 +33,7 @@ public class mainMenu : MonoBehaviour
 
     public void loadGame()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void mainMenuCam()

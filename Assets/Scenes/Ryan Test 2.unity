@@ -27628,7 +27628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Quit
+  m_text: Next
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a520ca5544b9cb438b5a0e06750fdbd, type: 2}
   m_sharedMaterial: {fileID: 3182067197243834979, guid: 8a520ca5544b9cb438b5a0e06750fdbd, type: 2}
@@ -28259,7 +28259,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 574189609}
         m_TargetAssemblyTypeName: endGameUI, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: next
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -74911,6 +74911,11 @@ MonoBehaviour:
   - {fileID: 933753844535178480, guid: 977d2eba54513f14cb1cce3a5fa259a0, type: 3}
   - {fileID: 933753844535178480, guid: 42f32225fb0b9724b9fbcb1397507c6d, type: 3}
   - {fileID: 933753844535178480, guid: d1957670892256244b7bab836463d225, type: 3}
+  - {fileID: 933753844535178480, guid: 8022852de215e6d41b8d7b68b660761d, type: 3}
+  - {fileID: 933753844535178480, guid: 8404f555ac9b0de48b40dbf43ac830d0, type: 3}
+  - {fileID: 933753844535178480, guid: b207e05c67817404e97bb9b31db007fd, type: 3}
+  - {fileID: 933753844535178480, guid: 855231ecc3e5b55498b2840f23003b95, type: 3}
+  - {fileID: 933753844535178480, guid: feba15ec8bab1ff4e810ed9bbc54947b, type: 3}
 --- !u!4 &1276138988
 Transform:
   m_ObjectHideFlags: 0

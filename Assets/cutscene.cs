@@ -32,6 +32,6 @@ public class cutscene : MonoBehaviour
         sc2.SetActive(false);
         sc3.SetActive(true);
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 }
