@@ -23,3 +23,10 @@ MonoBehaviour:
   bloomIntensity: 2.5
   chromaticAbberationIntensity: 0.25
   vignetteIntensity: 0.35
+  comboSound:
+    Guid:
+      Data1: 1050607635
+      Data2: 1328778297
+      Data3: -1227007059
+      Data4: -1258827907
+    Path: event:/SoundEffects/Combo SoundEffects/Brilliant
