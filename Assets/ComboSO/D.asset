@@ -29,11 +29,11 @@ MonoBehaviour:
       Data2: 1279723376
       Data3: -417827453
       Data4: -1356100301
-    Path: event:/SoundEffects/Combo SoundEffects/Dastardly
+    Path: event:/SoundEffects/UI Sound Effects/Dastardly
   dastardlyComboSound:
     Guid:
       Data1: -472691924
       Data2: 1279723376
       Data3: -417827453
       Data4: -1356100301
-    Path: event:/SoundEffects/Combo SoundEffects/Dastardly
+    Path: event:/SoundEffects/UI Sound Effects/Dastardly

@@ -29,4 +29,11 @@ MonoBehaviour:
       Data2: 1328778297
       Data3: -1227007059
       Data4: -1258827907
-    Path: event:/SoundEffects/Combo SoundEffects/Brilliant
+    Path: event:/SoundEffects/UI Sound Effects/Brilliant
+  dastardlyComboSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
