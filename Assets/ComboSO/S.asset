@@ -29,4 +29,11 @@ MonoBehaviour:
       Data2: 1288808313
       Data3: 1850225042
       Data4: -1942022735
-    Path: event:/SoundEffects/Combo SoundEffects/Sugoi
+    Path: event:/SoundEffects/UI Sound Effects/Sugoi
+  dastardlyComboSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 

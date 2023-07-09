@@ -29,4 +29,11 @@ MonoBehaviour:
       Data2: 1149027288
       Data3: 1069372855
       Data4: 872368253
-    Path: event:/SoundEffects/Combo SoundEffects/Cracked
+    Path: event:/SoundEffects/UI Sound Effects/Cracked
+  dastardlyComboSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 

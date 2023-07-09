@@ -22403,7 +22403,7 @@ MonoBehaviour:
       Data2: 1279723376
       Data3: -417827453
       Data4: -1356100301
-    Path: event:/SoundEffects/Combo SoundEffects/Dastardly
+    Path: event:/SoundEffects/UI Sound Effects/Dastardly
   Event: 
   PlayEvent: 11
   StopEvent: 12
@@ -62514,7 +62514,7 @@ MonoBehaviour:
       Data2: 1160333725
       Data3: 747290275
       Data4: -169854675
-    Path: event:/SoundEffects/Combo SoundEffects/UIOpen
+    Path: event:/SoundEffects/UI Sound Effects/UIOpen
 --- !u!4 &1055076542
 Transform:
   m_ObjectHideFlags: 0
@@ -75271,7 +75271,7 @@ MonoBehaviour:
       Data2: 1325622929
       Data3: 652222395
       Data4: -1698868784
-    Path: event:/SoundEffects/Combo SoundEffects/UIClose
+    Path: event:/SoundEffects/UI Sound Effects/UIClose
 --- !u!4 &1276499008
 Transform:
   m_ObjectHideFlags: 0
@@ -84659,7 +84659,7 @@ MonoBehaviour:
       Data2: 1102930270
       Data3: -872932693
       Data4: 1069934413
-    Path: event:/SoundEffects/Combo SoundEffects/Derank
+    Path: event:/SoundEffects/UI Sound Effects/Derank
   PV: {fileID: 519420035}
 --- !u!114 &1419752611
 MonoBehaviour:
