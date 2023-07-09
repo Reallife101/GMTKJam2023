@@ -62943,7 +62943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slide: {fileID: 695347243}
-  maxTime: 5
+  maxTime: 100
   main: {fileID: 2083129231}
   three: {fileID: 21300000, guid: c2ea1bd1a996b9e4da09c78a5ba4893d, type: 3}
   two: {fileID: 21300000, guid: 1e3941546ff19a24eb516b4c3767ea32, type: 3}
@@ -74911,6 +74911,11 @@ MonoBehaviour:
   - {fileID: 933753844535178480, guid: 977d2eba54513f14cb1cce3a5fa259a0, type: 3}
   - {fileID: 933753844535178480, guid: 42f32225fb0b9724b9fbcb1397507c6d, type: 3}
   - {fileID: 933753844535178480, guid: d1957670892256244b7bab836463d225, type: 3}
+  - {fileID: 933753844535178480, guid: 8022852de215e6d41b8d7b68b660761d, type: 3}
+  - {fileID: 933753844535178480, guid: 8404f555ac9b0de48b40dbf43ac830d0, type: 3}
+  - {fileID: 933753844535178480, guid: b207e05c67817404e97bb9b31db007fd, type: 3}
+  - {fileID: 933753844535178480, guid: 855231ecc3e5b55498b2840f23003b95, type: 3}
+  - {fileID: 933753844535178480, guid: feba15ec8bab1ff4e810ed9bbc54947b, type: 3}
 --- !u!4 &1276138988
 Transform:
   m_ObjectHideFlags: 0
