@@ -80,7 +80,61 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 512000
+  Length: 975934
+--- !u!114 &-5789826755952737398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicAmbiance/Title Music
+  m_EditorClassIdentifier: 
+  Path: event:/MusicAmbiance/Title Music
+  Guid:
+    Data1: 1348564639
+    Data2: 1307320018
+    Data3: 1292978320
+    Data4: -991333558
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 170919
+--- !u!114 &-4949198390391050133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Combo SoundEffects/UIOpen
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Combo SoundEffects/UIOpen
+  Guid:
+    Data1: 1842179708
+    Data2: 1160333725
+    Data3: 747290275
+    Data4: -169854675
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 546
 --- !u!114 &-3366463862042389838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +162,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1562
+--- !u!114 &-3005367057607892680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundEffects/Combo SoundEffects/UIClose
+  m_EditorClassIdentifier: 
+  Path: event:/SoundEffects/Combo SoundEffects/UIClose
+  Guid:
+    Data1: 1040217250
+    Data2: 1325622929
+    Data3: 652222395
+    Data4: -1698868784
+  Banks:
+  - {fileID: -2425263070615814250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 484
 --- !u!114 &-2985665930549492918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,10 +204,10 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638244657505577753
+  lastModified: 638244708806521209
   FileSizes:
   - Name: 
-    Value: 1320
+    Value: 1458
   Exists: 1
 --- !u!114 &-2632561081781944018
 MonoBehaviour:
@@ -170,7 +251,7 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638244657505552623
+  lastModified: 638244708806471142
   FileSizes: []
   Exists: 1
 --- !u!114 &-1777830050859394338
@@ -228,12 +309,15 @@ MonoBehaviour:
   - {fileID: -1777830050859394338}
   - {fileID: 531968338397994275}
   - {fileID: -2632561081781944018}
+  - {fileID: -5789826755952737398}
+  - {fileID: -4949198390391050133}
+  - {fileID: -3005367057607892680}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2425263070615814250}
   StringsBanks:
   - {fileID: -2985665930549492918}
-  cacheTime: 638244657505577753
+  cacheTime: 638244708806521209
   cacheVersion: 131601
 --- !u!114 &531968338397994275
 MonoBehaviour:
