@@ -19,7 +19,7 @@ public class bloodSplatter : MonoBehaviour
     {
         fadeTimeLeft -= Time.deltaTime;
         //fadeTimeLeft = Mathf.Clamp(fadeTimeLeft, 0, bloodFadeTime);
-        float newAlpha = Mathf.Lerp(0, 1, fadeTimeLeft / bloodFadeTime);
+        float newAlpha = Mathf.Lerp(0, 0.8f, fadeTimeLeft / bloodFadeTime);
         splatter.color = new Color(255, 255, 255, newAlpha);
     }
 
